@@ -161,7 +161,6 @@ vector<Comentario> cargarComentarios(const string &nombreArchivo)
         getline(ss, c.texto, ',');
         getline(ss, c.fecha, ',');
 
-        // Limpiar salto de linea en Windows (\r) de la ultima columna (fecha)
         if (!c.fecha.empty() && c.fecha[c.fecha.size() - 1] == '\r') {
             c.fecha.erase(c.fecha.size() - 1);
         }
