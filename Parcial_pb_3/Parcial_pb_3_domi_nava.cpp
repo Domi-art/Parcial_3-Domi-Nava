@@ -132,7 +132,6 @@ vector<Producto> cargarProductos(const string &nombreArchivo)
     return productos;
 }
 
-// CORRECCIÓN: Limpieza de caracteres ocultos (\r) al cargar comentarios
 vector<Comentario> cargarComentarios(const string &nombreArchivo)
 {
     vector<Comentario> comentarios;
